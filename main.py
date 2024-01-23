@@ -7,7 +7,7 @@ def test():
     try:
         return jsonify({"status": "get", "message": "api working"})
     except Exception as e:
-        return jsonify({"message":"not working"})
+        return jsonify({"message":"not working properly"})
 
 
 @app.route('/payment', methods=['POST'])
