@@ -5,7 +5,7 @@ app = Flask(__name__)
 @app.route('/',methods=['GET'])
 def test():
     try:
-        return jsonify({"status": "get", "message": "api working"})
+        return jsonify({"status": "get", "message": "api is working"})
     except Exception as e:
         return jsonify({"message":"not working properly"})
 
